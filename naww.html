@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luna Ilmira Triagustin - Profil Sekolah</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Fredoka:wght@400;600&display=swap" rel="stylesheet">
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- AOS Animation Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <style>
+        :root {
+            --primary-pink: #ff758c;
+            --secondary-red: #ff7eb3;
+            --accent-red: #e63946;
+            --light-bg: #fff0f3;
+            --card-bg: #ffffff;
+            --text-color: #4a4a4a;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            background-color: var(--light-bg);
+            color: var(--text-color);
+            overflow-x: hidden;
+        }
+
+        /* Header / Hero Section */
+        header {
+            background: linear-gradient(135deg, var(--primary-pink), var(--accent-red));
+            color: white;
+            text-align: center;
+            padding: 100px 20px 80px 20px;
+            border-bottom-left-radius: 50px;
+            border-bottom-right-radius: 50px;
+            position: relative;
+            box-shadow: 0 10px 30px rgba(230, 57, 70, 0.2);
+        }
+
+        .badge-cute {
+            background: rgba(255, 255, 255, 0.3);
+            padding: 8px 20px;
+            border-radius: 50px;
+            font-size: 14px;
+            font-weight: 500;
+            display: inline-block;
+            margin-bottom: 15px;
+            backdrop-filter: blur(5px);
+            border: 1px solid rgba(255, 255, 255, 0.4);
+        }
+
+        .profile-img-container {
+            width: 160px;
+            height: 160px;
+            margin: 0 auto 20px auto;
+            border-radius: 50%;
+            background: white;
+            padding: 5px;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+        }
+
+        .profile-img-container img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 50%;
+        }
+
+        header h1 {
+            font-family: 'Fredoka', cursive;
+            font-size: 2.8rem;
+            margin-bottom: 5px;
+            letter-spacing: 1px;
+        }
+
+        header p {
+            font-size: 1.1rem;
+            opacity: 0.95;
+        }
+
+        /* Main Container */
+        .container {
+            max-width: 900px;
+            margin: -40px auto 50px auto;
+            padding: 0 20px;
+            position: relative;
+            z-index: 10;
+        }
+
+        /* Card Style */
+        .card {
+            background: var(--card-bg);
+            border-radius: 25px;
+            padding: 35px;
+            box-shadow: 0 10px 30px rgba(255, 117, 140, 0.15);
+            margin-bottom: 30px;
+            border: 2px solid #ffe6eb;
+        }
+
+        .card h2 {
+            font-family: 'Fredoka', cursive;
+            color: var(--accent-red);
+            font-size: 1.8rem;
+            margin-bottom: 25px;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        /* Info Grid */
+        .info-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .info-item {
+            background: #fff8f9;
+            padding: 20px;
+            border-radius: 18px;
+            border-left: 5px solid var(--primary-pink);
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            transition: transform 0.3s ease;
+        }
+
+        .info-item:hover {
+            transform: translateY(-5px);
+        }
+
+        .info-item i {
+            font-size: 1.8rem;
+            color: var(--accent-red);
+        }
+
+        .info-content span {
+            font-size: 0.85rem;
+            color: #888;
+            display: block;
+        }
+
+        .info-content h3 {
+            font-size: 1.1rem;
+            color: #333;
+        }
+
+        /* Hobbies / Activities tags */
+        .tags-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+        }
+
+        .tag {
+            background: linear-gradient(135deg, #ff758c, #ff7eb3);
+            color: white;
+            padding: 10px 22px;
+            border-radius: 50px;
+            font-weight: 500;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            box-shadow: 0 4px 10px rgba(255, 117, 140, 0.3);
+            font-size: 0.95rem;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 30px;
+            color: #777;
+            font-size: 0.9rem;
+        }
+
+        footer i {
+            color: var(--accent-red);
+        }
+
+        /* Responsive */
+        @media(max-width: 600px) {
+            header h1 {
+                font-size: 2.2rem;
+            }
+            .card {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header / Profil Utama -->
+    <header data-aos="fade-down" data-aos-duration="1000">
+        <div class="badge-cute"><i class="fa-solid fa-sparkles"></i> Anak IPS Paling Manis</div>
+        <div class="profile-img-container">
+            <!-- Ganti src dengan link foto Luna -->
+            <img src="nww.jpg" alt="Luna Ilmira Triagustin">
+        </div>
+        <h1>Luna Ilmira Triagustin</h1>
+        <p>✨ Imut, Lucu, Menggemaskan & Rajin Menabung ✨</p>
+    </header>
+
+    <div class="container">
+        
+        <!-- Informasi Pribadi & Sekolah -->
+        <div class="card" data-aos="fade-up" data-aos-duration="1000">
+            <h2><i class="fa-solid fa-id-card"></i> Tentang Luna</h2>
+            <div class="info-grid">
+                <div class="info-item">
+                    <i class="fa-solid fa-graduation-cap"></i>
+                    <div class="info-content">
+                        <span>Jurusan</span>
+                        <h3>Anak IPS 📚</h3>
+                    </div>
+                </div>
+                <div class="info-item">
+                    <i class="fa-solid fa-door-open"></i>
+                    <div class="info-content">
+                        <span>Kelas</span>
+                        <h3>Kelas F7 🏫</h3>
+                    </div>
+                </div>
+                <div class="info-item">
+                    <i class="fa-solid fa-piggy-bank"></i>
+                    <div class="info-content">
+                        <span>Kebiasaan</span>
+                        <h3>Rajin Menabung 💰</h3>
+                    </div>
+                </div>
+                <div class="info-item">
+                    <i class="fa-solid fa-heart" style="color: var(--accent-red);"></i>
+                    <div class="info-content">
+                        <span>Pacar Tersayang</span>
+                        <h3>Ardy 💖</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Hobi & Kegiatan Sekolah -->
+        <div class="card" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+            <h2><i class="fa-solid fa-star"></i> Kegiatan & Hobi</h2>
+            <div class="tags-container">
+                <div class="tag">
+                    <i class="fa-solid fa-flag"></i> Anggota Paskibraka 🇮🇩
+                </div>
+                <div class="tag">
+                    <i class="fa-solid fa-gamepad"></i> Suka Main Mobile Legends 🎮
+                </div>
+                <div class="tag">
+                    <i class="fa-solid fa-face-smile-beam"></i> Imut & Menggemaskan 🥰
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Footer -->
+    <footer data-aos="fade-in" data-aos-duration="1000">
+        <p>Made with <i class="fa-solid fa-heart"></i> for Luna Ilmira Triagustin & Ardy ❤️</p>
+    </footer>
+
+    <!-- AOS Script untuk Animasi In/Out sederhana -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            once: false, // Animasi bisa berulang saat scroll ulang ke atas/bawah
+            mirror: true
+        });
+    </script>
+</body>
+</html>
